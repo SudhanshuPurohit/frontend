@@ -1,0 +1,98 @@
+@media screen and (max-width: 1300px) {
+
+    #nike_shoes {
+        left: 50%;
+        top: 58%;
+    }
+
+
+}
+
+
+@media screen and (max-width:1024px) {
+    #nav img {
+        height: 26px;
+    }
+
+    #nav i {
+        font-size: 14px;
+        cursor: pointer;
+
+    }
+
+    #nav_left {
+
+        gap: 24px;
+    }
+
+
+    #nav_icons {
+        font-size: 18px;
+        gap: 16px;
+    }
+
+    #product_price {
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    #product_name {
+        font-weight: 700;
+        display: flex;
+        font-size: 36px;
+    }
+
+    #product_rating img {
+        width: 12px;
+    }
+
+    #left_card p {
+        font-size: 16px;
+    }
+
+
+    #nike_shoes {
+        left: 50%;
+        top: 63%;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+
+    #product_price {
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    #product_name {
+        font-weight: 700;
+        display: flex;
+        font-size: 30px;
+    }
+
+    #product_rating img {
+        width: 12px;
+    }
+
+    #left_card p {
+        font-size: 12px;
+    }
+
+    #nike_shoes {
+        left: 54%;
+        top: 71%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #nike_shoes {
+        left: 47%;
+        top: 37%;
+    }
+
+
+}

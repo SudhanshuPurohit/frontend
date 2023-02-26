@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #bouncing-ball-section {
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            background-color: pink;
+            border: 2px solid white;
+        }
+        
+        #bouncing-ball-section #ball-canvas{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            position: relative;
+        }
+
+        #ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: linear-gradient( 0deg , #f06051 10%, #FFBA00,#08E8FE , #E75480 , #C71585);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            animation-name: bouncing-ball;
+            animation-fill-mode: backwards;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+
+       
+        
+
+
+         @keyframes bouncing-ball {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+
+
+            }
+
+            50%{
+                transform: translateY(-300px) rotate(180deg);
+
+            }
+
+            100%{
+                transform: translateY(0px) rotate(360deg);
+            } 
+
+            }
+
+    
+    </style>
+</head>
+
+<body>
+    <!-- This Section inclose the bouncing ball animation -->
+    <section id="bouncing-ball-section">
+
+        <div id="ball-canvas">
+            <div id="ball">
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

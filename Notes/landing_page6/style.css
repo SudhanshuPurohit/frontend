@@ -1,0 +1,310 @@
+/* Boiler Plate Code */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+}
+
+/* Navigation Bar code */
+
+nav{
+    width: 100%;
+    height: 50px;
+    padding: 6px 64px;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rosybrown; */
+    font-family: "gilroy";
+    font-size: 14px;
+}
+
+#logo i{
+    font-family: none;
+    background-color: black;
+    color: white;
+    padding: 2.5px 5px;
+    margin: 4px;
+}
+
+#nav_links{
+    display: flex;
+    gap: 50px;
+    /* border: 2px solid red; */
+    padding: 2px;
+
+}
+
+#nav_links a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.555);
+    font-family: "gilroy";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#nav_links a:nth-child(1){
+    color: black;
+}
+
+#nav_icon i{
+    padding: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.269);
+    border-radius: 100%;
+}
+
+/* Landing page CSS */
+
+#landing_page{
+    width: 100%;
+    display: flex;
+    /* height: calc(100vh - 50px); */
+    /* border: 2px solid black; */
+}
+
+#landing_page #left{
+    padding: 20px;
+    width: 60%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    justify-content: center;
+}
+
+#landing_page #left h1{
+    font-size: 3rem;
+    /* border: 2px solid green; */
+    font-family: "gilroy";
+    padding: 32px;
+}
+
+#landing_page #left p{
+    font-family: "gilroy";
+    font-weight: 500;
+    font-size: 14px;
+    /* border: 2px solid green; */
+    color: rgba(0, 0, 0, 0.555);
+    padding: 32px;
+
+}
+
+#landing_page #left #email_div{
+    padding: 32px;
+    /* border: 2px solid green; */
+
+}
+
+#landing_page #left #email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    border-radius: 32px;
+    padding: 6px 6px;
+    background-color: rgba(0, 0, 0, 0.097);
+}
+
+#left #email i{
+    color: rgba(0, 0, 0, 0.555);
+    margin: 4px;
+}
+
+#left #email input{
+    border: none;
+    margin: 4px;
+    background-color: transparent;
+    font-family: "gilroy";
+    
+}
+
+#email button{
+    font-size: 11px;
+    background: black;
+    color: white;
+    font-family: "gilroy";
+    padding: 10px 15px;
+    border-radius: 26px;
+    margin-left: 40px;
+}
+
+#landing_page #right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#right #right_card1{
+    width: 250px;
+    height: 350px;
+    box-shadow: 0.2px 0.2px 21px 0.2px rgba(0, 0, 0, 0.211);
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content : space-between;
+    position: absolute;
+    background-color: white;
+}
+
+#right_card2{
+    width: 200px;
+    height: 270px;
+    box-shadow: 0.2px 0.2px 21px 0.2px rgba(0, 0, 0, 0.211);
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    rotate: 348deg;
+    position: relative;
+    top: -62px;
+    left: -90px;
+} 
+
+
+.card_image{
+    width: 90%;
+    margin: 8px;
+}
+ .card_image img{
+    width: 100%;
+    border-radius: 21px;
+}
+
+.card_info{
+    width: 100%;
+    padding: 8px;
+}
+
+.card_info h1{
+    margin: 4px;
+    font-size: 16px;
+    font-family: "gilroy";
+}
+
+.card_info p{
+    margin: 4px;
+    font-size: 14px;
+    font-family: "gilroy";
+    color: rgba(0, 0, 0, 0.600);
+    font-weight: 500;
+}
+
+
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 0px 0px 19px 19px;
+}
+
+.card_footer h1 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* style card section css */
+
+#style_card_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    margin-top: 23px;
+}
+
+#style_card_section > h1{
+    padding: 32px;
+    font-family: "gilroy";
+} 
+
+
+#style_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+}
+
+.style_card{
+    width: 250px;
+    height: 350px;
+    box-shadow: 0.2px 0.2px 21px 0.2px rgba(0, 0, 0, 0.211);
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content : space-between;
+    background-color: white;
+} 
+
+
+.card_image{
+    width: 90%;
+    margin: 8px;
+}
+ .card_image img{
+    width: 100%;
+    border-radius: 21px;
+}
+
+.card_info{
+    width: 100%;
+    padding: 8px;
+}
+
+.card_info h1{
+    margin: 4px;
+    font-size: 16px;
+    font-family: "gilroy";
+}
+
+.card_info p{
+    margin: 4px;
+    font-size: 14px;
+    font-family: "gilroy";
+    color: rgba(0, 0, 0, 0.600);
+    font-weight: 500;
+}
+
+
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 0px 0px 19px 19px;
+}
+
+.card_footer h1 {
+    font-size: 12px;
+    font-weight: 500;
+}

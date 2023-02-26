@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100%;
+}
+
+#main {
+    width: 100vw;
+    height: 100%;
+}
+
+#main #navigation {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    /* border: 2px solid red; */
+}
+
+#navigation #logo h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#navigation #nav_icon i {
+    /* border: 2px solid blue; */
+    padding: 2px;
+    font-weight: 600;
+}
+
+#landing_page {
+    width: 100%;
+    height: calc(100% - 50px - 40px);
+    /* border: 2px solid rgb(116, 74, 74); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing_page_card {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    /* border: 2px solid aquamarine; */
+}
+
+#landing_page_card #card_left {
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#landing_page_card #card_left #card_left_heading {
+    position: relative;
+    left: 52%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing_page_card #card_left #card_left_heading h1 {
+    font-size: 2.2rem;
+    white-space: nowrap;
+}
+
+#landing_page_card #card_left #card_left_heading h6 {
+    letter-spacing: 1px;
+}
+
+#landing_page_card #card_left h1 span {
+    color: #E7879A;
+}
+
+#landing_page_card #card_left #explore_link {
+    padding: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#landing_page_card #card_left #explore_link a {
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#landing_page_card #card_left #explore_link #bottom {
+    height: 2px;
+    background-color: #E7879A;
+    animation-name: move_effect;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move_effect {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#landing_page_card #card_right {
+    width: 70%;
+    height: 100%;
+}
+
+#landing_page_card #card_right img {
+    width: 100%;
+    height: 100%;
+}
+
+#footer {
+    width: 100%;
+    height: 40px;
+    /* border: 2px solid salmon; */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer_left h1 {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#footer_right #social_logo {
+    display: flex;
+    gap: 6px;
+}
+
+#footer_right #social_logo i {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
